@@ -1,0 +1,9 @@
+DELETE FROM product_category WHERE name = 'Home Appliances';
+DELETE FROM product_category WHERE name = 'Food & Beverages';
+DELETE FROM product_category WHERE name = 'Mobile & Gadgets';
+DELETE FROM product_category WHERE name = 'Computers & Laptops';
+DELETE FROM product_category WHERE name = 'Fashion Accessories';
+DELETE FROM product_category WHERE name = 'Beauty & Personal Care';
+DELETE FROM product_category WHERE name = 'Bags';
+DELETE FROM product_category WHERE name = 'Shoes';
+DELETE FROM product_category WHERE name = 'Clothes';

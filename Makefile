@@ -1,9 +1,9 @@
 postgres:
-	docker run --name shopchaby-postgres16 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:16-alpine 
+	docker run --name postgres16 --network shopchaby-network -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:16-alpine 
 createdb:
-	docker exec -it shopchaby-postgres16 createdb --username=root --owner=root shopchaby
+	docker exec -it postgres16 createdb --username=root --owner=root shopchaby
 dropdb:
-	docker exec -it shopchaby-postgres16 dropdb shopchaby
+	docker exec -it postgres16 dropdb shopchaby
 migrateup:
 	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/shopchaby?sslmode=disable" -verbose up
 migrateup1:

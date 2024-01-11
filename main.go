@@ -33,27 +33,4 @@ func main() {
 		log.Fatal("cannot start server", err)
 	}
 
-	// err := godotenv.Load()
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
-
-	// host := os.Getenv("HOST")
-	// port := os.Getenv("DBPORT")
-	// user := os.Getenv("USER")
-	// password := os.Getenv("PASSWORD")
-	// dbname := os.Getenv("DBNAME")
-
-	// psqlInfo := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
-
-	// db, err := sql.Open("postgres", psqlInfo)
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
-	// if err = db.Ping(); err != nil {
-	// 	log.Fatal(err)
-	// }
-	// defer db.Close()
-	// fmt.Println("successfully connected to database")
-
 }
